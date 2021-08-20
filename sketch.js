@@ -1,7 +1,7 @@
 var canvas,bg;
 var together;
-var tom, tomImg1,tomImg2, tomImg3;
-var jerry, jerryImg1,jerryImg2, jerryImg3;
+var tom, tomImg1,tomImg2,tomImg3;
+var jerry, jerryImg1,jerryImg2,jerryImg3;
 
 function preload() {
     bg = loadImage("imágenes/garden.png");
@@ -29,10 +29,10 @@ function draw() {
 
     background(bg);
 
-    if(tom.x - jerry.x < (tom.width - jerry.width)/2){ 
-
+    if(tom.x - jerry.x < (tom.width - jerry.width)/2)
+    { 
         tom.velocityX=0;
-        tom.addAnimation("tomLastImage", tomImg3);b
+        tom.addAnimation("tomLastImage", tomImg3);
         tom.x =300;
         tom.scale=0.2;
         tom.changeAnimation("tomLastImage");
@@ -43,7 +43,6 @@ function draw() {
 
     drawSprites();
 }
-
 
 function keyPressed(){
 
